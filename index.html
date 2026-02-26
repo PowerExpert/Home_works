@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeStart — Курс по веб-разработке</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<header class="sticky top-0 bg-white shadow-md z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold text-indigo-600">CodeStart</h1>
+
+    <nav class="hidden md:flex gap-6">
+      <a href="#features" class="hover:text-indigo-600 transition">Преимущества</a>
+      <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+      <a href="#register" class="hover:text-indigo-600 transition">Регистрация</a>
+    </nav>
+
+    <button class="md:hidden bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 active:scale-95 transition">
+      Menu
+    </button>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <div class="flex flex-col gap-6">
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Освой веб-разработку с нуля
+    </h2>
+    <p class="text-gray-600 text-lg">
+      Практический курс по HTML, CSS и JavaScript с живыми проектами и поддержкой наставника.
+    </p>
+
+    <a href="#register"
+       class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow-lg
+              hover:bg-indigo-700 hover:-translate-y-1
+              active:scale-95
+              transition duration-300 w-fit">
+      Записаться
+    </a>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+       class="rounded-2xl shadow-xl w-full h-80 object-cover"
+       alt="coding">
+</section>
+
+<section id="features" class="bg-white py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">Почему выбирают нас?</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+        <h4 class="text-xl font-semibold mb-4">Практика</h4>
+        <p class="text-gray-600">Реальные проекты для портфолио уже во время обучения.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+        <h4 class="text-xl font-semibold mb-4">Наставник</h4>
+        <p class="text-gray-600">Персональная поддержка и проверка домашних заданий.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+        <h4 class="text-xl font-semibold mb-4">Трудоустройство</h4>
+        <p class="text-gray-600">Помогаем составить резюме и подготовиться к собеседованию.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-16 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">Частые вопросы</h3>
+
+    <div class="flex flex-col gap-6">
+      
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Нужны ли знания программирования?</h4>
+        <p class="text-gray-600">Нет, курс рассчитан на новичков.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Сколько длится курс?</h4>
+        <p class="text-gray-600">Обучение длится 3 месяца.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Будет ли сертификат?</h4>
+        <p class="text-gray-600">Да, по окончании вы получите сертификат.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="register" class="bg-indigo-50 py-16 px-6">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-lg">
+    <h3 class="text-2xl font-bold mb-6 text-center">Регистрация</h3>
+
+    <form class="flex flex-col gap-4">
+      <input type="text"
+             placeholder="Ваше имя"
+             required
+             class="p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none" />
+
+      <input type="email"
+             placeholder="Email"
+             required
+             class="p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none invalid:border-red-500" />
+
+      <button type="submit"
+              class="bg-indigo-600 text-white py-3 rounded-lg
+                     hover:bg-indigo-700
+                     active:scale-95
+                     focus:ring-4 focus:ring-indigo-300
+                     transition duration-300">
+        Отправить
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>© 2026 CodeStart. Все права защищены.</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-indigo-400 transition">Instagram</a>
+      <a href="#" class="hover:text-indigo-400 transition">Telegram</a>
+      <a href="#" class="hover:text-indigo-400 transition">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
